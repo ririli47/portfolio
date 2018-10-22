@@ -31,11 +31,11 @@
 
     .header--menu li {
         flex: 1;
+        margin-bottom: 10px;
     }
 
     .header--menu a {
         display: block;
-        padding: 15px;
         color: inherit;
         font-size: 2rem;
         text-decoration: none;

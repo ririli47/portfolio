@@ -10,7 +10,11 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'ririli&apos;s portfolio' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css' }
+    ],
+    scripts: [
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js' }
     ]
   },
   /*
