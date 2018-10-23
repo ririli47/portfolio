@@ -3,7 +3,7 @@
         <div v-for="work in works" v-bind:key="work.id">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="">
+                    <img class="activator" :src="work.logo">
                 </div>
                 <div class="card-content">
                     <span class="card-title activator grey-text text-darken-4">{{ work.name }}<i class="material-icons right">more_vert</i></span>
@@ -24,8 +24,8 @@
         data() {
             return {
                 works: [
-                    {id: 1, name: 'Tasker'},
-                    {id: 2, name: 'IdeaCafe'}
+                    {id: 1, name: 'Tasker', logo: 'img/tasker_logo.svg'},
+                    {id: 2, name: 'IdeaCafe', logo: 'img/ideacafe_logo.png'}
                 ]
             }
         }
