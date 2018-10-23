@@ -1,20 +1,18 @@
 <template>
     <footer class="page-footer">
-        <div class="footer-copyright">
-            Copyright © Naoya Fukuhara
-          </div>
+        <p>Copyright © Naoya Fukuhara</p>
     </footer>
 </template>
 
 
 <style>
-    footer {
+    .page-footer {
         position: fixed;
         bottom: 0;
         width: 100%;
     }
 
-    .footer-copyright {
-        text-align: center;
+    p {
+        margin-bottom: 1rem;
     }
 </style>
