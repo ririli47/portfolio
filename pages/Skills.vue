@@ -1,24 +1,26 @@
 <template>
   <section class="container">
-    <div>
-      <my-header/>
-      <h1 class="title">
-        Skills
-      </h1>
-    </div>
+    <my-header/>
+      <div>
+        <h1 class="title">
+          Skills
+        </h1>
+      </div>
+    <my-footer/>
   </section>
 </template>
 
 <script>
 import MyHeader from '~/components/MyHeader.vue'
+import MyFooter from '~/components/MyFooter.vue'
 
 export default {
   components: {
-    MyHeader
+    MyHeader,
+    MyFooter
   }
 }
 </script>
-
 
 <style>
     .container {
