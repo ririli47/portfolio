@@ -5,6 +5,7 @@
                 <h1 class="title">
                     Skills
                 </h1>
+                <my-skills/>
             </div>
         <my-footer/>
     </section>
@@ -13,11 +14,13 @@
 <script>
     import MyHeader from '~/components/MyHeader.vue'
     import MyFooter from '~/components/MyFooter.vue'
+    import MySkills from '~/components/MySkills.vue'
 
     export default {
         components: {
             MyHeader,
-            MyFooter
+            MyFooter,
+            MySkills
         }
     }
 </script>
