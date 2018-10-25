@@ -7,7 +7,7 @@
                 </div>
                 <div class="card-content">
                     <span class="card-title activator grey-text text-darken-4">{{ work.name }}<i class="material-icons right">more_vert</i></span>
-                    <p><a href="#">ここがりんくだよ</a></p>
+                    <p><a :href="work.link" target="_blink" >{{ work.name }}</a></p>
                 </div>
                 <div class="card-reveal">
                     <span class="card-title grey-text text-darkens-4">{{ work.name }}<i class="material-icons right">close</i></span>
@@ -25,9 +25,9 @@
             return {
                 works: [
                     //?????????
-                    {id: 1, name: 'Tasker', logo: '_nuxt/assets/img/tasker_logo.svg'},
-                    {id: 2, name: 'IdeaCafe', logo: '_nuxt/assets/img/ideacafe_logo.png'},
-                    {id: 3, name: 'IdeaCafe', logo: '_nuxt/assets/tasker_logo.svg'}
+                    {id: 1, name: 'Tasker', link: 'https://ririli-tasker.herokuapp.com/', logo: '_nuxt/assets/img/tasker_logo.svg'},
+                    {id: 2, name: 'IdeaCafe', link: 'https://ideacafe.herokuapp.com/', logo: '_nuxt/assets/img/ideacafe_logo.png'},
+                    {id: 3, name: 'IdeaCafe', link: 'https://ideacafe.herokuapp.com/', logo: '_nuxt/assets/tasker_logo.svg'}
                 ]
             }
         }
