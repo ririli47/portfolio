@@ -10,7 +10,7 @@
                     <p><a href="#">ここがりんくだよ</a></p>
                 </div>
                 <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">{{ work.name }}<i class="material-icons right">close</i></span>
+                    <span class="card-title grey-text text-darkens-4">{{ work.name }}<i class="material-icons right">close</i></span>
                     <p>これはせつめいだよ</p>
                 </div>
             </div>
@@ -24,8 +24,10 @@
         data() {
             return {
                 works: [
-                    {id: 1, name: 'Tasker', logo: 'img/tasker_logo.svg'},
-                    {id: 2, name: 'IdeaCafe', logo: 'img/ideacafe_logo.png'}
+                    //?????????
+                    {id: 1, name: 'Tasker', logo: '_nuxt/assets/img/tasker_logo.svg'},
+                    {id: 2, name: 'IdeaCafe', logo: '_nuxt/assets/img/ideacafe_logo.png'},
+                    {id: 3, name: 'IdeaCafe', logo: '_nuxt/assets/tasker_logo.svg'}
                 ]
             }
         }
@@ -38,6 +40,10 @@
     }
     .card {
         flex: 1;
-        margin: 20px; 
+        margin: 20px;
+    }
+    .card-image {
+        align-items: center;
+        width: 100%;
     }
 </style>
