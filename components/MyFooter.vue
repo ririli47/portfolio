@@ -1,5 +1,5 @@
 <template>
-    <footer class="page-footer">
+    <footer class="page-footer pink">
         <p>Copyright © Naoya Fukuhara</p>
     </footer>
 </template>

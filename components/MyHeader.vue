@@ -1,6 +1,6 @@
 <template>
     <header>
-        <nav class="header--menu">
+        <nav class="header--menu pink">
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="About">About</a></li>
@@ -19,7 +19,6 @@
         left: 0;
         z-index: 100;
         width: 100%;
-        background-color: rgba(255,255,255,0.9);
     }
 
     .header--menu ul {
