@@ -3,9 +3,9 @@
         <nav class="header--menu pink">
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="About">About</a></li>
-                <li><a href="Works">Works</a></li>
-                <li><a href="Skills">Skills</a></li>
+                <li><a href="/About">About</a></li>
+                <li><a href="/Works">Works</a></li>
+                <li><a href="/Skills">Skills</a></li>
             </ul>
         </nav>
     </header>
