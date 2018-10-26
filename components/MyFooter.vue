@@ -9,7 +9,9 @@
     .page-footer {
         position: fixed;
         bottom: 0;
+        margin-top: 20px;
         width: 100%;
+        z-index: 100;
     }
 
     p {

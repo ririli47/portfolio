@@ -28,7 +28,6 @@
 <style>
     .container {
         min-height: 100vh;
-        display: flex;
         justify-content: center;
         margin-top: 3rem;
         text-align: center;

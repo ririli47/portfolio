@@ -6,12 +6,8 @@
                     <img class="activator" :src="work.logo">
                 </div>
                 <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">{{ work.name }}<i class="material-icons right">more_vert</i></span>
+                    <span class="card-title activator grey-text text-darken-4">{{ work.name }}</span>
                     <p><a :href="work.link" target="_blink" >{{ work.name }}</a></p>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darkens-4">{{ work.name }}<i class="material-icons right">close</i></span>
-                    <p>これはせつめいだよ</p>
                 </div>
             </div>
         </div>
@@ -24,9 +20,8 @@
         data() {
             return {
                 works: [
-                    //?????????
                     {id: 1, name: 'Tasker', link: 'https://ririli-tasker.herokuapp.com/', logo: require("~/assets/img/tasker_logo.png")},
-                    {id: 2, name: 'IdeaCafe', link: 'https://ideacafe.herokuapp.com/', logo: require("~/assets/img/ideacafe_logo.png")}
+                    {id: 2, name: 'IdeaCafe', link: 'https://ideacafe.herokuapp.com/', logo: require("~/assets/img/ideacafe_logo.png")},
                 ]
             }
         }
@@ -36,13 +31,17 @@
 <style>
     .works-list {
         display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+    }
+    .work {
+        max-width: 33.3%;
+        flex: 33.3%;
     }
     .card {
-        width: 60%;
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
-        flex: 1;
-
     }
     .card-image {
         align-items: center;
