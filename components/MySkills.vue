@@ -75,12 +75,12 @@
         flex: 33.3%;
     }
     .card {
-        width: 80%;
+        width: 60%;
         margin-left: auto;
         margin-right: auto;
     }
     .card-image {
-        width: 80%;
+        width: 60%;
         margin-left: auto;
         margin-right: auto;
         padding-top: 10%;
