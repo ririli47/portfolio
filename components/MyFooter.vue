@@ -9,10 +9,12 @@
     .page-footer {
         position: fixed;
         bottom: 0;
+        padding-top: 0.5rem;
         width: 100%;
+        z-index: 100;
     }
 
     p {
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
     }
 </style>

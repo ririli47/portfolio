@@ -1,38 +1,12 @@
 <template>
     <section class="skill-list">
-        <h2>Languages</h2>
-        <div class="langs-list">
-            <div v-for="lang in langs" v-bind:key="lang.id">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" :src="lang.logo">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">{{ lang.name }}<i class="material-icons right">more_vert</i></span>
-                        <p><a href="#">ここがりんくだよ</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darkens-4">{{ lang.name }}<i class="material-icons right">close</i></span>
-                        <p>これはせつめいだよ</p>
-                    </div>
+        <div v-for="skill in skills" v-bind:key="skill.id" class="skill">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" :src="skill.logo">
                 </div>
-            </div>
-        </div>
-        <h2>Tools</h2>
-        <div class="tools-list">
-            <div v-for="tool in tools" v-bind:key="tool.id">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" :src="tool.logo">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">{{ tool.name }}<i class="material-icons right">more_vert</i></span>
-                        <p><a href="#">ここがりんくだよ</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darkens-4">{{ tool.name }}<i class="material-icons right">close</i></span>
-                        <p>これはせつめいだよ</p>
-                    </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">{{ skill.name }}</span>
                 </div>
             </div>
         </div>
@@ -44,17 +18,16 @@
         name: 'SkillsList',
         data() {
             return {
-                langs: [
-                    //?????????
-                    {id: 1, name: 'PHP', logo: ''},
-                    {id: 2, name: 'HTML5', logo: ''},
-                    {id: 3, name: 'CSS3', logo: ''}
-                ],
-                tools: [
-                    //?????????
-                    {id: 1, name: 'Github', logo: ''},
-                    {id: 2, name: 'Vue.js', logo: ''},
-                    {id: 3, name: 'Nuxt.js', logo: ''}
+                skills: [
+                    {id: 1, name: 'PHP',     logo: require("~/assets/img/php.png")},
+                    {id: 2, name: 'Perl',    logo: require("~/assets/img/perl.png")},
+                    {id: 3, name: 'HTML5',   logo: require("~/assets/img/html5.png")},
+                    {id: 4, name: 'CSS3',    logo: require("~/assets/img/css-3.png")},                    
+                    {id: 5, name: 'Github', logo: require("~/assets/img/github.png")},
+                    {id: 6, name: 'Laravel', logo: require("~/assets/img/laravel.png")},
+                    {id: 7, name: 'Docker',  logo: require("~/assets/img/docker.png")},
+                    {id: 8, name: 'Vue.js',  logo: require("~/assets/img/vue.png")},
+                    {id: 9, name: 'Nuxt.js', logo: require("~/assets/img/nuxt.png")}
                 ]
             }
         }
@@ -63,22 +36,23 @@
 
 <style>
     .skill-list {
-        margin-top: 20px;
-    }
-    .langs-list {
         display: flex;
-        margin-top: 20px;
+        flex-wrap: wrap;
+        margin-bottom: 100px;
     }
-    .tools-list {
-        display: flex;
-        margin-top: 20px;
+    .skill {
+        max-width: 33.3%;
+        flex: 33.3%;
     }
     .card {
-        flex: 1;
-        margin: 20px;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .card-image {
-        align-items: center;
-        width: 100%;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10%;
     }
 </style>

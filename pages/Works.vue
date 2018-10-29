@@ -33,5 +33,4 @@
         margin-top: 3rem;
         text-align: center;
     }
-
 </style>

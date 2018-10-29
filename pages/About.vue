@@ -5,6 +5,7 @@
                 <h1 class="title">
                     About
                 </h1>
+                <my-profile/>
             </div>
         <my-footer/>
     </section>
@@ -13,11 +14,13 @@
 <script>
     import MyHeader from '~/components/MyHeader.vue'
     import MyFooter from '~/components/MyFooter.vue'
+    import MyProfile from '~/components/MyProfile.vue'
 
     export default {
         components: {
             MyHeader,
-            MyFooter
+            MyFooter,
+            MyProfile
         }
     }
 </script>
