@@ -36,7 +36,7 @@
     }
     .work {
         max-width: 33.3%;
-        flex: 1;
+        flex: 33.3%;
     }
     .card {
         width: 80%;
