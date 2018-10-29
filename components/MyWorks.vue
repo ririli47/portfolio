@@ -36,7 +36,7 @@
     }
     .work {
         max-width: 33.3%;
-        flex: 33.3%;
+        flex: 1;
     }
     .card {
         width: 80%;
@@ -44,7 +44,9 @@
         margin-right: auto;
     }
     .card-image {
-        align-items: center;
-        width: 100%;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10%;
     }
 </style>

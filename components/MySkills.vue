@@ -2,36 +2,26 @@
     <section class="skill-list">
         <h2>Languages</h2>
         <div class="langs-list">
-            <div v-for="lang in langs" v-bind:key="lang.id">
+            <div v-for="lang in langs" v-bind:key="lang.id" class="lang">
                 <div class="card">
                     <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" :src="lang.logo">
                     </div>
                     <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">{{ lang.name }}<i class="material-icons right">more_vert</i></span>
-                        <p><a href="#">ここがりんくだよ</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darkens-4">{{ lang.name }}<i class="material-icons right">close</i></span>
-                        <p>これはせつめいだよ</p>
+                        <span class="card-title activator grey-text text-darken-4">{{ lang.name }}</span>
                     </div>
                 </div>
             </div>
         </div>
         <h2>Tools</h2>
         <div class="tools-list">
-            <div v-for="tool in tools" v-bind:key="tool.id">
+            <div v-for="tool in tools" v-bind:key="tool.id" class="tool">
                 <div class="card">
                     <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" :src="tool.logo">
                     </div>
                     <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">{{ tool.name }}<i class="material-icons right">more_vert</i></span>
-                        <p><a href="#">ここがりんくだよ</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darkens-4">{{ tool.name }}<i class="material-icons right">close</i></span>
-                        <p>これはせつめいだよ</p>
+                        <span class="card-title activator grey-text text-darken-4">{{ tool.name }}</span>
                     </div>
                 </div>
             </div>
@@ -45,13 +35,11 @@
         data() {
             return {
                 langs: [
-                    //?????????
-                    {id: 1, name: 'PHP', logo: ''},
-                    {id: 2, name: 'HTML5', logo: ''},
-                    {id: 3, name: 'CSS3', logo: ''}
+                    {id: 1, name: 'PHP', logo: require("~/assets/img/php.png")},
+                    {id: 2, name: 'HTML5', logo: require("~/assets/img/html5.png")},
+                    {id: 3, name: 'CSS3', logo: require("~/assets/img/css-3.png")}
                 ],
                 tools: [
-                    //?????????
                     {id: 1, name: 'Github', logo: ''},
                     {id: 2, name: 'Vue.js', logo: ''},
                     {id: 3, name: 'Nuxt.js', logo: ''}
@@ -67,18 +55,30 @@
     }
     .langs-list {
         display: flex;
-        margin-top: 20px;
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+    }
+    .lang {
+        max-width: 33.3%;
+        flex: 1;
     }
     .tools-list {
         display: flex;
         margin-top: 20px;
     }
-    .card {
+    .tool {
+        max-width: 33.3%;
         flex: 1;
-        margin: 20px;
+    }
+    .card {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .card-image {
-        align-items: center;
-        width: 100%;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10%;
     }
 </style>
