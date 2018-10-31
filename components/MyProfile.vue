@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="profile">
         <img src="../assets/img/ririli.jpg" class="profile-icon">
         <dl>
             <dt>氏名：</dt><dd>福原 直也</dd>
@@ -17,12 +17,13 @@
         width: 80%;
     }
     dl {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         width: 100%;
     }
     dt {
         float: left;
         width: 50%;
+        margin-left: 10%;
         text-align: left;
     }
     dd {

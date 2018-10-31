@@ -1,7 +1,7 @@
 <template>
     <section class="container">
         <my-header/>
-            <div>
+            <div class="profile">
                 <h1 class="topic">
                     About
                 </h1>
@@ -26,7 +26,16 @@
 </script>
 
 <style scoped>
+    .profile {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .container {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        text-align: center;
         margin-top: 3rem;
         align-items: start;
     }
