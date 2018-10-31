@@ -15,6 +15,12 @@ module.exports = {
     ],
     scripts: [
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js' }
+    ],
+    css: [
+      '@fortawesome/fontawesome-free-webfonts',
+      '@fortawesome/fontawesome-free-webfonts/css/fa-brands.css',
+      '@fortawesome/fontawesome-free-webfonts/css/fa-regular.css',
+      '@fortawesome/fontawesome-free-webfonts/css/fa-solid.css',
     ]
   },
   /*
