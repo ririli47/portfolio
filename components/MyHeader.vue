@@ -2,10 +2,10 @@
     <header>
         <nav class="header--menu pink">
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/About">About</a></li>
-                <li><a href="/Works">Works</a></li>
-                <li><a href="/Skills">Skills</a></li>
+                <li><router-link to="/">Home</router-link></li>
+                <li><router-link to="/About">About</router-link></li>
+                <li><router-link to="/Works">Works</router-link></li>
+                <li><router-link to="/Skills">Skills</router-link></li>
             </ul>
         </nav>
     </header>

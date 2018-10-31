@@ -2,7 +2,7 @@
     <section class="container">
         <my-header/>
             <div>
-                <h1 class="title">
+                <h1 class="topic">
                     About
                 </h1>
                 <my-profile/>
@@ -25,13 +25,9 @@
     }
 </script>
 
-
-<style>
+<style scoped>
     .container {
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
         margin-top: 3rem;
-        text-align: center;
+        align-items: start;
     }
 </style>

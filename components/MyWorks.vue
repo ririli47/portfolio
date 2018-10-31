@@ -22,6 +22,7 @@
                 works: [
                     {id: 1, name: 'Tasker', link: 'https://ririli-tasker.herokuapp.com/', logo: require("~/assets/img/tasker_logo.png")},
                     {id: 2, name: 'IdeaCafe', link: 'https://ideacafe.herokuapp.com/', logo: require("~/assets/img/ideacafe_logo.png")},
+                    {id: 3, name: 'Portfolio', link: 'https://www.ririli.net/', logo: require("~/assets/img/ideacafe_logo.png")},
                 ]
             }
         }
@@ -39,7 +40,7 @@
         flex: 33.3%;
     }
     .card {
-        width: 60%;
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
     }
