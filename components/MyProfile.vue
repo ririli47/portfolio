@@ -1,11 +1,16 @@
 <template>
-    <section>
+    <section class="profile">
         <img src="../assets/img/ririli.jpg" class="profile-icon">
         <dl>
-            <dt>氏名：</dt><dd>福原 直也</dd>
-            <dt>所在地：</dt><dd>東京都</dd>
-            <dt>仕事内容：</dt><dd>webバックエンド開発</dd>
+            <dt>氏名</dt><dd>福原 直也</dd>
+            <dt>所在地</dt><dd>東京都</dd>
+            <dt>仕事内容</dt><dd>webサーバーサイドエンジニア</dd>
         </dl>
+        <div class="social">
+            <a target="_brank" href="https://twitter.com/sugu_"><img src="../assets/img/Twitter.png"></a>
+            <a target="_brank" href="https://qiita.com/ririli"><img src="../assets/img/qiita.png"></a>
+            <a target="_brank" href="https://github.com/ririli47"><img src="../assets/img/GitHub-logo.png"></a>
+        </div>
     </section>
 </template>
 
@@ -14,19 +19,36 @@
 
 <style>
     .profile-icon {
-        width: 80%;
+        width: 40%;
     }
     dl {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         width: 100%;
+        line-height: 2.5rem;
     }
     dt {
-        float: left;
-        width: 50%;
+        width: 20%;
+        margin-left: 5%;
         text-align: left;
+        border-bottom: 1px solid red;
     }
     dd {
-        margin-left: 80px;
+        margin-left: 15%;
+        margin-bottom: 3%;
         text-align: left;
+        border-bottom: 1px solid red;
+    }
+    .social {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+    .social a {
+        flex: 1;
+    }
+    .social img{
+        max-width: 30%;
     }
 </style>

@@ -1,8 +1,8 @@
 <template>
     <section class="container">
         <my-header/>
-            <div>
-                <h1 class="title">
+            <div class="profile">
+                <h1 class="topic">
                     About
                 </h1>
                 <my-profile/>
@@ -25,13 +25,18 @@
     }
 </script>
 
-
-<style>
+<style scoped>
+    .profile {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .container {
         min-height: 100vh;
         display: flex;
         justify-content: center;
-        margin-top: 3rem;
         text-align: center;
+        margin-top: 3rem;
+        align-items: start;
     }
 </style>

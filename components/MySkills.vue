@@ -23,7 +23,7 @@
                     {id: 2, name: 'Perl',    logo: require("~/assets/img/perl.png")},
                     {id: 3, name: 'HTML5',   logo: require("~/assets/img/html5.png")},
                     {id: 4, name: 'CSS3',    logo: require("~/assets/img/css-3.png")},                    
-                    {id: 5, name: 'Github', logo: require("~/assets/img/github.png")},
+                    {id: 5, name: 'Github',  logo: require("~/assets/img/github.png")},
                     {id: 6, name: 'Laravel', logo: require("~/assets/img/laravel.png")},
                     {id: 7, name: 'Docker',  logo: require("~/assets/img/docker.png")},
                     {id: 8, name: 'Vue.js',  logo: require("~/assets/img/vue.png")},

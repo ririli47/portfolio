@@ -2,7 +2,7 @@
     <section class="container">
         <my-header/>
             <div>
-                <h1 class="title">
+                <h1 class="topic">
                     Skills
                 </h1>
                 <my-skills/>
@@ -25,12 +25,13 @@
     }
 </script>
 
-<style>
+<style scoped>
     .container {
         min-height: 100vh;
         display: flex;
         justify-content: center;
-        margin-top: 3rem;
         text-align: center;
+        margin-top: 3rem;
+        align-items: start;
     }
 </style>

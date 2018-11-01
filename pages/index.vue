@@ -1,10 +1,11 @@
 <template>
     <section class="container">
         <my-header/>
-            <div>
+            <div class="home">
                 <h1 class="title">
                     ririli's Portfolio
                 </h1>
+                <router-view/>
             </div>
         <my-footer/>
     </section>
@@ -27,10 +28,9 @@
         min-height: 100vh;
         display: flex;
         justify-content: center;
-        align-items: center;
         text-align: center;
+        align-items: center;
     }
-
     .title {
         font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
         display: block;
