@@ -39,4 +39,11 @@
         margin-top: 3rem;
         align-items: start;
     }
+
+    @media (max-width: 767px) {
+        .topic {
+            font-size: 2.1rem;
+        }
+    }
+
 </style>

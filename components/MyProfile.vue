@@ -51,4 +51,15 @@
     .social img{
         max-width: 30%;
     }
+
+    @media (max-width: 767px) {
+        dl {
+            font-size: 0.8rem;
+            line-height: 1.5rem;
+        }
+        dt {
+            width: 40%;
+        }
+    }
+
 </style>

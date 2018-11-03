@@ -50,4 +50,20 @@
         margin-right: auto;
         padding-top: 10%;
     }
+
+    @media (max-width: 767px) {
+        .topic {
+            font-size: 2.1rem;
+        }
+        .card .card-content {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .card .card-title {
+            font-size: 16px;
+        }
+        a {
+            font-size: 10px;
+        }
+    }
 </style>

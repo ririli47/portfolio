@@ -17,4 +17,11 @@
     p {
         margin-bottom: 0.5rem;
     }
+
+    @media (max-width: 767px) {
+        p {
+            font-size: 0.7rem;
+        }
+    }
+
 </style>

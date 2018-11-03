@@ -51,5 +51,12 @@
     .links {
         padding-top: 15px;
     }
+
+    @media (max-width: 767px) {
+        .title {
+            font-size: 40px;
+        }
+    }
+
 </style>
 
