@@ -43,4 +43,10 @@
     .header--menu a:hover {
         background-color: rgba(0,0,0,0.3);
     }
+
+    @media (max-width: 767px) {
+        .header--menu a {
+            font-size: 1rem;
+        }
+    }
 </style>
