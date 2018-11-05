@@ -1,7 +1,11 @@
 <template>
     <section class="works-list">
+        <div v-if="show">
+            <p>yeah</p>
+        </div>
+
         <div v-for="work in works" v-bind:key="work.id" class="work">
-            <div class="card">
+            <div class="card" v-on:click="showTechs(work.id)">
                 <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator" :src="work.logo">
                 </div>
@@ -23,7 +27,13 @@
                     {id: 1, name: 'Tasker', link: 'https://ririli-tasker.herokuapp.com/', logo: require("~/assets/img/tasker_logo.png")},
                     {id: 2, name: 'IdeaCafe', link: 'https://ideacafe.herokuapp.com/', logo: require("~/assets/img/ideacafe_logo.png")},
                     {id: 3, name: 'Portfolio', link: 'https://www.ririli.net/', logo: require("~/assets/img/ririli.jpg")},
-                ]
+                ],
+                show: true
+            }
+        },
+        methods: {
+            showTechs: function(id) {
+                this.show = id
             }
         }
     }

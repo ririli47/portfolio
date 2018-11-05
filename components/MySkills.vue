@@ -2,11 +2,11 @@
     <section class="skill-list">
         <div v-for="skill in skills" v-bind:key="skill.id" class="skill">
             <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" :src="skill.logo">
+                <div class="card-image waves-block waves-light">
+                    <img :src="skill.logo">
                 </div>
                 <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">{{ skill.name }}</span>
+                    <span class="card-title  grey-text text-darken-4">{{ skill.name }}</span>
                 </div>
             </div>
         </div>
