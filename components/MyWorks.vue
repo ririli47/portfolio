@@ -1,7 +1,17 @@
 <template>
     <section class="works-list">
-        <div v-if="show">
-            <p>yeah</p>
+        <div v-if="show" class="infomation">
+            <div class="card">
+                <div class="card-image infromation-card">
+                    <img :src="works[showId-1].logo">
+                </div>
+                <div class="card-content">
+                    せつめいだよせつめいだよせつめいだよせつめいだよせつめいだよせつめいだよせつめいだよせつめいだよせつめいだよせつめいだよせつめいだよせつめいだよせつめいだよせつめいだよせつめいだよせつめいだよせつめいだよせつめいだよせつめいだよせつめいだよせつめいだよせつめいだよ
+                </div>
+                <div class="card-action">
+                    <a href="#">リンクだよ</a>
+                </div>
+            </div>
         </div>
 
         <div v-for="work in works" v-bind:key="work.id" class="work">
@@ -28,12 +38,24 @@
                     {id: 2, name: 'IdeaCafe', link: 'https://ideacafe.herokuapp.com/', logo: require("~/assets/img/ideacafe_logo.png")},
                     {id: 3, name: 'Portfolio', link: 'https://www.ririli.net/', logo: require("~/assets/img/ririli.jpg")},
                 ],
-                show: true
+                infomations: [
+                    {id: 1, name: 'Tasker', link: 'https://ririli-tasker.herokuapp.com/', logo: require("~/assets/img/tasker_logo.png")},
+                    {id: 2, name: 'IdeaCafe', link: 'https://ideacafe.herokuapp.com/', logo: require("~/assets/img/ideacafe_logo.png")},
+                    {id: 3, name: 'Portfolio', link: 'https://www.ririli.net/', logo: require("~/assets/img/ririli.jpg")},
+                ],
+                show: false,
+                showId: 0
             }
         },
         methods: {
             showTechs: function(id) {
-                this.show = id
+                if(this.show && id == this.showId) {
+                    this.show = !this.show
+                }
+                else if (!this.show) {
+                    this.show = !this.show
+                }
+                this.showId = id
             }
         }
     }
@@ -59,6 +81,14 @@
         margin-left: auto;
         margin-right: auto;
         padding-top: 10%;
+    }
+
+    .infomation {
+        width: 100%;
+    }
+    .infromation-card {
+        width: 20%;
+        padding-top: 5%;
     }
 
     @media (max-width: 767px) {
