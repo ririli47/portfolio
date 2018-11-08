@@ -9,18 +9,13 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'ririli&apos;s portfolio' }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css' }
-    ],
-    scripts: [
+    script: [
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js' }
     ],
-    css: [
-      '@fortawesome/fontawesome-free-webfonts',
-      '@fortawesome/fontawesome-free-webfonts/css/fa-brands.css',
-      '@fortawesome/fontawesome-free-webfonts/css/fa-regular.css',
-      '@fortawesome/fontawesome-free-webfonts/css/fa-solid.css',
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },
+      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css' },
     ]
   },
   /*

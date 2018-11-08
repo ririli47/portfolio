@@ -1,8 +1,8 @@
 <template>
     <section class="works-list">
         <div v-if="show" class="infomation">
-            <div v-on:click="showIdChange(-1)">
-                hoge
+            <div v-on:click="showIdChange(-1)" class="arrow-left">
+                <i class="material-icons">chevron left</i>
             </div>
             <div class="card">
                 <div class="card-image infromation-card">
@@ -19,8 +19,8 @@
                     <a :href="works[showId].link" target="_blank">サイトへのリンク</a>
                 </div>
             </div>
-            <div v-on:click="showIdChange(+1)">
-                fuga
+            <div v-on:click="showIdChange(+1)" class="arrow-right">
+                <i class="material-icons">navigate_before</i>
             </div>
         </div>
 
@@ -103,6 +103,7 @@
 
     .infomation {
         width: 100%;
+        display: flex;
     }
     .infromation-card {
         width: 20%;
@@ -128,6 +129,15 @@
         border-bottom: 1px solid red;
     }
 
+    .arrow-left  .arrow-right {
+        flex: 1;
+    }
+    .arrow-left img {
+        width: 60%;
+    }
+    .arrow-right img {
+        width: 100%;
+    }
 
     @media (max-width: 767px) {
         .topic {
@@ -144,4 +154,28 @@
             font-size: 10px;
         }
     }
+
+/* Material iconsを利用する */
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* 推奨サイズ */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+ 
+  /* WebKitブラウザサポート */
+  -webkit-font-smoothing: antialiased;
+  /* Chrome、Safariサポート */
+  text-rendering: optimizeLegibility;
+ 
+  /* Firefoxサポート */
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* IEサポート */
+  font-feature-settings: 'liga';
+}
 </style>
