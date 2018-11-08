@@ -45,11 +45,11 @@
             return {
                 works: [
                     {id: 0, name: 'Tasker', link: 'https://ririli-tasker.herokuapp.com/', logo: require("~/assets/img/tasker_logo.png"),
-                    techs: 'Ruby on Rails, heroku', infomaiton: 'RoRのチュートリアルを一周したのちに練習で作ったTodo管理ツールです。初めてwebフレームワークを利用した成果物です。'},
+                    techs: 'Ruby on Rails, heroku', infomaiton: 'RoRのチュートリアルを一周したのちに練習で作ったTodo管理ツール。初めてwebフレームワークを利用した成果物。'},
                     {id: 1, name: 'IdeaCafe', link: 'https://ideacafe.herokuapp.com/', logo: require("~/assets/img/ideacafe_logo.png"),
-                    techs: 'Laravel, Docker, Github, heroku, PostgreSQL', infomaiton: 'PHPフレームワークであるLaravelの練習に作りったアイデアを共有するというコンセプトの簡易SNSです。'},
+                    techs: 'Laravel, Docker, Github, heroku, PostgreSQL', infomaiton: 'PHPフレームワークであるLaravelの練習に作ったアイデアを共有するというコンセプトの簡易SNS。'},
                     {id: 2, name: 'Portfolio', link: 'https://www.ririli.net/', logo: require("~/assets/img/ririli.jpg"),
-                    techs: 'Vue.js, Nuxt.js, Github, Netlify', infomaiton: '今ご覧いただいているPortfolioです。Vue.jsとNetlify使ってみたさで作りました。コンポーネント指向いいです。'},
+                    techs: 'Vue.js, Nuxt.js, Github, Netlify', infomaiton: 'このPortfolio。Vue.jsとNetlify使ってみたさで作成。コンポーネント指向いい。'},
                 ],
                 show: false,
                 showId: 0
