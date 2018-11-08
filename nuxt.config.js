@@ -16,11 +16,6 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css' },
-    ],
-    modules: [
-      ['@nuxtjs/google-analytics', {
-        id: 'UA-116063973-2'
-      }]
     ]
   },
   /*
