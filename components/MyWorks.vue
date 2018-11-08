@@ -1,12 +1,12 @@
 <template>
     <section class="works-list">
         <div v-if="show" class="infomation">
-            <div v-on:click="showIdChange(-1)" class="arrow-left">
-                <i class="material-icons">chevron left</i>
+            <div class="arrow-left">
+                <i class="material-icons large" v-on:click="showIdChange(-1)">navigate_before</i>
             </div>
             <div class="card">
                 <div class="card-image infromation-card">
-                    <img :src="works[showId].logo">
+                    <a :href="works[showId].link" target="_blank"><img :src="works[showId].logo"></a>
                 </div>
                 <div class="card-content">
                     <dl>
@@ -19,8 +19,8 @@
                     <a :href="works[showId].link" target="_blank">サイトへのリンク</a>
                 </div>
             </div>
-            <div v-on:click="showIdChange(+1)" class="arrow-right">
-                <i class="material-icons">navigate_before</i>
+            <div class="arrow-right">
+                <i class="material-icons large" v-on:click="showIdChange(+1)">navigate_next</i>
             </div>
         </div>
 
@@ -104,6 +104,8 @@
     .infomation {
         width: 100%;
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .infromation-card {
         width: 20%;
