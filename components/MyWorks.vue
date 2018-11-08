@@ -1,13 +1,37 @@
 <template>
     <section class="works-list">
-        <div v-for="work in works" v-bind:key="work.id" class="work">
+        <div v-if="show" class="infomation">
+            <div class="arrow-left">
+                <i class="material-icons large" v-on:click="showIdChange(-1)">navigate_before</i>
+            </div>
             <div class="card">
+                <div class="card-image infromation-card">
+                    <a :href="works[showId].link" target="_blank"><img :src="works[showId].logo"></a>
+                </div>
+                <div class="card-content">
+                    <dl>
+                        <dt>Name</dt><dd>{{ works[showId].name }}</dd>
+                        <dt>Techs</dt><dd>{{ works[showId].techs }}</dd>
+                        <dt>Infomaiton</dt><dd>{{ works[showId].infomaiton }}</dd>
+                    </dl>
+                </div>
+                <div class="card-action">
+                    <a :href="works[showId].link" target="_blank">サイトへのリンク</a>
+                </div>
+            </div>
+            <div class="arrow-right">
+                <i class="material-icons large" v-on:click="showIdChange(+1)">navigate_next</i>
+            </div>
+        </div>
+
+        <div v-for="work in works" v-bind:key="work.id" class="work">
+            <div class="card" v-on:click="showTechs(work.id)">
                 <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator" :src="work.logo">
                 </div>
                 <div class="card-content">
                     <span class="card-title activator grey-text text-darken-4">{{ work.name }}</span>
-                    <p><a :href="work.link" target="_blink" >{{ work.name }}</a></p>
+                    <a :href="work.link" target="_blink" ><p>{{ work.name }}</p></a>
                 </div>
             </div>
         </div>
@@ -20,11 +44,37 @@
         data() {
             return {
                 works: [
-                    {id: 1, name: 'Tasker', link: 'https://ririli-tasker.herokuapp.com/', logo: require("~/assets/img/tasker_logo.png")},
-                    {id: 2, name: 'IdeaCafe', link: 'https://ideacafe.herokuapp.com/', logo: require("~/assets/img/ideacafe_logo.png")},
-                    {id: 3, name: 'Portfolio', link: 'https://www.ririli.net/', logo: require("~/assets/img/ririli.jpg")},
-                ]
+                    {id: 0, name: 'Tasker', link: 'https://ririli-tasker.herokuapp.com/', logo: require("~/assets/img/tasker_logo.png"),
+                    techs: 'Ruby on Rails, heroku', infomaiton: 'RoRのチュートリアルを一周したのちに練習で作ったTodo管理ツールです。初めてwebフレームワークを利用した成果物です。'},
+                    {id: 1, name: 'IdeaCafe', link: 'https://ideacafe.herokuapp.com/', logo: require("~/assets/img/ideacafe_logo.png"),
+                    techs: 'Laravel, Docker, Github, heroku, PostgreSQL', infomaiton: 'PHPフレームワークであるLaravelの練習に作りったアイデアを共有するというコンセプトの簡易SNSです。'},
+                    {id: 2, name: 'Portfolio', link: 'https://www.ririli.net/', logo: require("~/assets/img/ririli.jpg"),
+                    techs: 'Vue.js, Nuxt.js, Github, Netlify', infomaiton: '今ご覧いただいているPortfolioです。Vue.jsとNetlify使ってみたさで作りました。コンポーネント指向いいです。'},
+                ],
+                show: false,
+                showId: 0
             }
+        },
+        methods: {
+            showTechs: function(id) {
+                if(this.show && id == this.showId) {
+                    this.show = !this.show
+                }
+                else if (!this.show) {
+                    this.show = !this.show
+                }
+                this.showId = id
+            },
+            showIdChange(change) {
+                this.showId = this.showId + change
+                if(this.showId < 0) {
+                    this.showId = this.works.length -1
+                }
+                else if (this.showId > this.works.length -1) {
+                    this.showId = 0
+                }
+            }
+
         }
     }
 </script>
@@ -51,6 +101,46 @@
         padding-top: 10%;
     }
 
+    .infomation {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .infromation-card {
+        width: 20%;
+        padding-top: 3%;
+    }
+
+    dl {
+        font-size: 1.3rem;
+        width: 100%;
+        line-height: 2.5rem;
+    }
+    dt {
+        width: 20%;
+        margin-left: 5%;
+        text-align: left;
+        border-bottom: 1px solid red;
+    }
+    dd {
+        margin-left: 15%;
+        margin-bottom: 3%;
+        margin-right: 5%;
+        text-align: left;
+        border-bottom: 1px solid red;
+    }
+
+    .arrow-left  .arrow-right {
+        flex: 1;
+    }
+    .arrow-left img {
+        width: 60%;
+    }
+    .arrow-right img {
+        width: 100%;
+    }
+
     @media (max-width: 767px) {
         .topic {
             font-size: 2.1rem;
@@ -66,4 +156,28 @@
             font-size: 10px;
         }
     }
+
+/* Material iconsを利用する */
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* 推奨サイズ */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+ 
+  /* WebKitブラウザサポート */
+  -webkit-font-smoothing: antialiased;
+  /* Chrome、Safariサポート */
+  text-rendering: optimizeLegibility;
+ 
+  /* Firefoxサポート */
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* IEサポート */
+  font-feature-settings: 'liga';
+}
 </style>
