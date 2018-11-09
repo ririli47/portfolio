@@ -17,7 +17,7 @@
 <script>
 </script>
 
-<style>
+<style scoped>
     .profile-icon {
         width: 40%;
     }
