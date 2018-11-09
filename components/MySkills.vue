@@ -61,11 +61,14 @@
             font-size: 2.1rem;
         }
         .card .card-content {
+            padding-top: 12px;
+            padding-bottom: 12px;
             padding-left: 0;
             padding-right: 0;
         }
         .card .card-title {
             font-size: 16px;
+            padding: 
         }
     }
 </style>
