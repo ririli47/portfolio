@@ -106,6 +106,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 1rem;
     }
     .infromation-card {
         width: 20%;
@@ -121,24 +122,18 @@
         width: 20%;
         margin-left: 5%;
         text-align: left;
-        border-bottom: 1px solid red;
+
     }
     dd {
         margin-left: 15%;
         margin-bottom: 3%;
         margin-right: 5%;
         text-align: left;
-        border-bottom: 1px solid red;
+        border-bottom: 1px solid black;
     }
 
     .arrow-left  .arrow-right {
         flex: 1;
-    }
-    .arrow-left img {
-        width: 60%;
-    }
-    .arrow-right img {
-        width: 100%;
     }
 
     @media (max-width: 767px) {
@@ -149,8 +144,15 @@
             padding-left: 0;
             padding-right: 0;
         }
+        .card dl {
+            font-size: 14px;
+        }
         .card .card-title {
             font-size: 16px;
+        }
+        .arrow-left  .arrow-right {
+            flex: 0;
+            display: none;
         }
         a {
             font-size: 10px;
@@ -159,25 +161,25 @@
 
 /* Material iconsを利用する */
 .material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;  /* 推奨サイズ */
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  line-height: 1;
-  text-transform: none;
- 
-  /* WebKitブラウザサポート */
-  -webkit-font-smoothing: antialiased;
-  /* Chrome、Safariサポート */
-  text-rendering: optimizeLegibility;
- 
-  /* Firefoxサポート */
-  -moz-osx-font-smoothing: grayscale;
- 
-  /* IEサポート */
-  font-feature-settings: 'liga';
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* 推奨サイズ */
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    line-height: 1;
+    text-transform: none;
+    
+    /* WebKitブラウザサポート */
+    -webkit-font-smoothing: antialiased;
+    /* Chrome、Safariサポート */
+    text-rendering: optimizeLegibility;
+    
+    /* Firefoxサポート */
+    -moz-osx-font-smoothing: grayscale;
+    
+    /* IEサポート */
+    font-feature-settings: 'liga';
 }
 </style>
