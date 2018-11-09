@@ -68,7 +68,6 @@
         }
         .card .card-title {
             font-size: 16px;
-            padding: 
         }
     }
 </style>
