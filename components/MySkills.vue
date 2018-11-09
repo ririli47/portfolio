@@ -34,7 +34,7 @@
     }
 </script>
 
-<style>
+<style scoped>
     .skill-list {
         display: flex;
         flex-wrap: wrap;
