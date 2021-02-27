@@ -28,8 +28,8 @@
                     {id: 7, name: 'Docker',  logo: require("~/assets/img/docker.png")},
                     {id: 8, name: 'Vue.js',  logo: require("~/assets/img/vue.png")},
                     {id: 9, name: 'Nuxt.js', logo: require("~/assets/img/nuxt.png")},
-                    {id: 9, name: 'Angular.js', logo: require("~/assets/img/angular.png")},
-                    {id: 10, name: 'CakePHP', logo: require("~/assets/img/cake.png")}
+                    {id: 10, name: 'Angular.js', logo: require("~/assets/img/angular.png")},
+                    {id: 11, name: 'CakePHP', logo: require("~/assets/img/cake.png")}
                 ]
             }
         }
