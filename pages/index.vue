@@ -3,7 +3,7 @@
         <my-header/>
             <div class="home">
                 <h1 class="title">
-                    ririli's Portfolio
+                    Fukuhara's Portfolio
                 </h1>
                 <router-view/>
             </div>

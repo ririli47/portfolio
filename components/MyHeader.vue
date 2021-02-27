@@ -1,6 +1,6 @@
 <template>
     <header>
-        <nav class="header--menu pink">
+        <nav class="header--menu pink accent-2">
             <ul>
                 <li><router-link to="/">Home</router-link></li>
                 <li><router-link to="/About">About</router-link></li>

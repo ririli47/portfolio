@@ -4,7 +4,10 @@
         <dl>
             <dt>氏名</dt><dd>福原 直也</dd>
             <dt>所在地</dt><dd>東京都</dd>
-            <dt>仕事内容</dt><dd>webサーバーサイドエンジニア</dd>
+            <dt>仕事内容</dt><dd>Webサービスエンジニア</dd>
+            <dt>得意</dt><dd>バックエンド, フロントエンド</dd>
+            <dt>苦手</dt><dd>インフラ, 運用</dd>
+            <dt>興味</dt><dd>アプリ開発</dd>
         </dl>
         <div class="social">
             <a target="_brank" href="https://twitter.com/sugu_"><img src="../assets/img/Twitter.png"></a>

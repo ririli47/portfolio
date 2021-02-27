@@ -50,6 +50,10 @@
                     techs: 'Laravel, Docker, Github, heroku, PostgreSQL', infomaiton: 'PHPフレームワークであるLaravelの練習に作ったアイデアを共有するというコンセプトの簡易SNS。'},
                     {id: 2, name: 'Portfolio', link: 'https://www.ririli.net/', logo: require("~/assets/img/ririli.jpg"),
                     techs: 'Vue.js, Nuxt.js, Github, Netlify', infomaiton: 'このPortfolio。Vue.jsとNetlify使ってみたさで作成。コンポーネント指向いい。'},
+                    {id: 3, name: 'AccountTimer', link: 'https://hardcore-allen-1e1019.netlify.app/', logo: require("~/assets/img/AccountTimer.png"),
+                    techs: 'Vue.js, Nuxt.js, Github, Netlify', infomaiton: '長すぎる会議に嫌気が差してこんなにお金かかってるんだぞと主張するために開発。実際に会議が短くなったので神。'},
+                    {id: 4, name: 'my-pallete', link: 'https://my-pallete-2acec.firebaseapp.com/', logo: require("~/assets/img/Mypalette.png"),
+                    techs: 'Vue.js, Nuxt.js, Github, Firebase', infomaiton: 'よく使う色をカラーコードで保存しておくサービス。FirebaseのAuthenticationとFireStoreを使ってみたくて開発。'},
                 ],
                 show: false,
                 showId: 0
